@@ -13,7 +13,7 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "The job has finished."
 
-### Step 2: Uncomment line 17 to 21
+### Step 2 [Optional]: Uncomment lines 17 to 21 and add them to the workflow above
 #       - run: echo "Triggered by event: ${{ github.event_name }}."
 #       - run: echo "Running on server: ${{ runner.os }}."
 #       - run: echo "Branch name: ${{ github.ref }} 
