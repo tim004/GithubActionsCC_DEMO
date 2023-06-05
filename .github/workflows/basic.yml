@@ -13,9 +13,9 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "The job has finished."
 
-### Step 2 [Optional]: Uncomment lines 17 to 21 and add them to the workflow above
-#       - run: echo "Triggered by event ${{ github.event_name }}."
-#       - run: echo "Running on server ${{ runner.os }}."
-#       - run: echo "Branch name ${{ github.ref }}." 
-#       - run: echo "Repository name ${{ github.repository }}."
-#       - run: echo "Job status ${{ job.status }}."
+## Step 2 [Optional]: Uncomment lines 17 to 21 and add them to the workflow above
+      - run: echo "Triggered by event ${{ github.event_name }}."
+      - run: echo "Running on server ${{ runner.os }}."
+      - run: echo "Branch name ${{ github.ref }}." 
+      - run: echo "Repository name ${{ github.repository }}."
+      - run: echo "Job status ${{ job.status }}."
