@@ -1,0 +1,21 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "We are going to list the files in the repository."
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "The job has finished."
+
+### Step 2 [Optional]: Uncomment lines 17 to 21 and add them to the workflow above
+#       - run: echo "Triggered by event ${{ github.event_name }}."
+#       - run: echo "Running on server ${{ runner.os }}."
+#       - run: echo "Branch name ${{ github.ref }}." 
+#       - run: echo "Repository name ${{ github.repository }}."
+#       - run: echo "Job status ${{ job.status }}."
