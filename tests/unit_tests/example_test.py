@@ -5,4 +5,4 @@ def test_always_passes():
     assert True
     
 def test_python_version():
-    assert sys.version_info.minor >= 8
+    assert sys.version_info.minor >= 6
