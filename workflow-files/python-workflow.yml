@@ -32,6 +32,7 @@ jobs:
           pytest
 
 # Step 1: Commit this file
-# Step 2: Comment out line 21, uncomment lines 22-28, Commit this file
-# Step 3: Comment out line 16, Uncomment lines 8-10,17, Commit this file          
-# Step 4: Comment out line 3, Uncomment line 4, Commit this file           
+# Step 2: Comment out line 21, uncomment lines 22-28, Commit this file --> Adds linting check to your workflow
+# Step 3: Fix unused import that prevents the workflow from succeeding, commit the change
+# Step 4: Comment out line 16, Uncomment lines 8-10,17, Commit this file --> Test your python code with multiple Python versions         
+# Step 5: Comment out line 3, Uncomment line 4, Commit this file --> Only run your workflow on a pull request          
